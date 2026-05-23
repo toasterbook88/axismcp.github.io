@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxisMCP Privacy Policy</title>
+    <style>
+        :root { --bg: #fafafa; --fg: #1a1a1a; --accent: #007AFF; --muted: #6e6e73; --border: #d2d2d7; }
+        @media (prefers-color-scheme: dark) { :root { --bg: #1c1c1e; --fg: #f5f5f7; --border: #38383a; --muted: #98989d; } }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: var(--fg); background: var(--bg); max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
+        h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
+        .updated { color: var(--muted); font-size: 0.875rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+        h3 { font-size: 1rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.25rem; }
+        p, li { margin-bottom: 0.5rem; }
+        ul { padding-left: 1.5rem; }
+        a { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        th { font-weight: 600; }
+        .highlight { background: var(--accent); color: #fff; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.85rem; }
+        .callout { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 6px 6px 0; background: rgba(0,122,255,0.06); }
+        @media (prefers-color-scheme: dark) { .callout { background: rgba(0,122,255,0.15); } }
+    </style>
+</head>
+<body>
+
+<h1>AxisMCP Privacy Policy</h1>
+<p class="updated">Effective: May 23, 2026 &middot; Last updated: May 23, 2026</p>
+
+<div class="callout">
+    <strong>Summary:</strong> AxisMCP collects no personal data. All processing happens on your device. Nothing is sent to the developer.
+</div>
+
+<h2>1. Overview</h2>
+<p>AxisMCP is a local Model Context Protocol (MCP) server that runs entirely on your Apple device. It turns your device into a private AI hub for tools and apps you trust. This policy explains what data the app can access and how it is handled.</p>
+
+<h2>2. Data Collection</h2>
+<p><span class="highlight">None.</span> AxisMCP does not collect, transmit, or store any user data on external servers. The developer has no access to your content, prompts, context, or server logs.</p>
+
+<h2>3. Data Storage</h2>
+<p>All user-generated data&mdash;including context notes, tool recipes, permission configurations, and server logs&mdash;is stored locally on your device using Apple&rsquo;s standard data containers. This data is never uploaded, synced, or shared with the developer or any third party.</p>
+
+<h2>4. On-Device Permissions</h2>
+<p>AxisMCP may request access to the following device capabilities, but only when you explicitly start a workflow that requires them. None of these are requested automatically during onboarding.</p>
+<ul>
+    <li><strong>Local Network</strong> &mdash; So MCP clients you choose can connect.</li>
+    <li><strong>Camera</strong> &mdash; Only for workflows you start.</li>
+    <li><strong>Microphone</strong> &mdash; Only for recording or transcription workflows you start.</li>
+    <li><strong>Speech Recognition</strong> &mdash; Only for transcription workflows you start.</li>
+    <li><strong>Contacts</strong> &mdash; Only for workflows you run.</li>
+    <li><strong>Calendars</strong> &mdash; Only for workflows you run.</li>
+    <li><strong>Location (When In Use)</strong> &mdash; Only while the app is open and for workflows you start.</li>
+</ul>
+<p>You can review and revoke any permission at any time in your device&rsquo;s Settings app under Privacy &amp; Security.</p>
+
+<h2>5. Local Network &amp; Connectivity</h2>
+<p>AxisMCP runs a local MCP server on your device. Communication between your device and connected clients stays on your local network. If you enable TLS, connections are encrypted with per-device certificates generated on your device. No traffic is routed through the developer&rsquo;s servers.</p>
+
+<h2>6. Third-Party Services</h2>
+<p>AxisMCP does not integrate any third-party analytics, advertising, or tracking SDKs. The app does not use Sign in with Apple or any third-party authentication service.</p>
+
+<h2>7. Children&rsquo;s Privacy</h2>
+<p>AxisMCP is not directed at children under 13. The app does not knowingly collect personal information from children. Since no data is collected from anyone, no special protections are needed beyond what is described in this policy.</p>
+
+<h2>8> Apple Foundation Models</h2>
+<p>When available, AxisMCP uses Apple&rsquo;s on-device Foundation Models for inference. These models run locally on your device. Input prompts and outputs never leave your device. Apple&rsquo;s own privacy policies govern the Foundation Models framework.</p>
+
+<h2>9. Tracking &amp; Analytics</h2>
+<p>AxisMCP does not track users across apps or websites. The app contains:</p>
+<ul>
+    <li>No advertising identifiers</li>
+    <li>No analytics SDKs</li>
+    <li>No telemetry or crash reporting services</li>
+    <li>No data brokers or third-party data sharing</li>
+</ul>
+
+<h2>10. API Usage Disclosures</h2>
+<p>In accordance with Apple&rsquo;s privacy requirements, AxisMCP declares the following API usage:</p>
+<table>
+    <tr><th>API Category</th><th>Purpose</th><th>Reason Code</th></tr>
+    <tr><td>System Boot Time</td><td>Detect device restarts for server recovery</td><td>35F9.1</td></tr>
+    <tr><td>Disk Space</td><td>Check available storage for context data</td><td>E174.1</td></tr>
+</table>
+
+<h2>11. Data Retention &amp; Deletion</h2>
+<p>All data stays on your device. You can delete it at any time by:</p>
+<ul>
+    <li>Deleting individual context notes and recipes within the app</li>
+    <li>Removing the app from your device (this deletes all app data)</li>
+</ul>
+<p>There is no server-side data to delete because no data ever leaves your device.</p>
+
+<h2>12. Changes to This Policy</h2>
+<p>This policy may be updated to reflect changes in AxisMCP&rsquo;s features. Significant changes will be noted in the app&rsquo;s &ldquo;What&rsquo;s New&rdquo; section. The latest version is always available at this URL.</p>
+
+<h2>13. Contact</h2>
+<p>If you have questions about this privacy policy, please contact:</p>
+<p><a href="https://axismcp.github.io/support">https://axismcp.github.io/support</a></p>
+
+</body>
+</html>
