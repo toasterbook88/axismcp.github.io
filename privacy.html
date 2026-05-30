@@ -64,7 +64,7 @@
 <h2>7. Children&rsquo;s Privacy</h2>
 <p>AxisMCP is not directed at children under 13. The app does not knowingly collect personal information from children. Since no data is collected from anyone, no special protections are needed beyond what is described in this policy.</p>
 
-<h2>8> Apple Foundation Models</h2>
+<h2>8. Apple Foundation Models</h2>
 <p>When available, AxisMCP uses Apple&rsquo;s on-device Foundation Models for inference. These models run locally on your device. Input prompts and outputs never leave your device. Apple&rsquo;s own privacy policies govern the Foundation Models framework.</p>
 
 <h2>9. Tracking &amp; Analytics</h2>
@@ -80,8 +80,11 @@
 <p>In accordance with Apple&rsquo;s privacy requirements, AxisMCP declares the following API usage:</p>
 <table>
     <tr><th>API Category</th><th>Purpose</th><th>Reason Code</th></tr>
+    <tr><td>UserDefaults</td><td>Store server configuration and user preferences</td><td>CA92.1</td></tr>
+    <tr><td>Keychain</td><td>Securely store auth tokens and TLS identity</td><td>763A</td></tr>
     <tr><td>System Boot Time</td><td>Detect device restarts for server recovery</td><td>35F9.1</td></tr>
     <tr><td>Disk Space</td><td>Check available storage for context data</td><td>E174.1</td></tr>
+    <tr><td>Network Interfaces (getifaddrs)</td><td>Discover local IP for Bonjour service advertisement</td><td>44B2.1</td></tr>
 </table>
 
 <h2>11. Data Retention &amp; Deletion</h2>
